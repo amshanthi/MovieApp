@@ -2,7 +2,7 @@ import React from "react";
 
 const Filter = ({ filterArr, handleFilterChange, minRate }) => {
   return (
-    <ul className="flex justify-between items-center gap-4 ">
+    <ul className="flex justify-between items-center  gap-4 md:text-sm ">
       {filterArr.map((filter) => (
         <li
           onClick={() => handleFilterChange(filter)}

@@ -7,7 +7,7 @@ import _ from "lodash";
 const MovieList = ({ type, title, icon }) => {
   const API_KEY = "e35dc3019241f69f7967a12499d8487f";
   const [movies, setMovies] = useState([]);
-  const [minRate, setMinRate] = useState(0);
+  const [minRate, setMinRate] = useState(8);
   const [sortBy, setSortBy] = useState({
     by: "default",
     order: "asc",
@@ -58,7 +58,7 @@ const MovieList = ({ type, title, icon }) => {
 
   return (
     <section className=" mx-auto py-4 " id={type}>
-      <header className=" flex justify-between items-center p-2 m-2">
+      <header className="  flex justify-between md:items-center p-2 m-2 md:flex-row flex-col gap-4">
         <h2 className="text-2xl font-bold text-[#ffe400] flex items-center gap-1">
           {title}
           <img
@@ -67,7 +67,7 @@ const MovieList = ({ type, title, icon }) => {
             alt={`${title} Icon`}
           />
         </h2>
-        <div className="flex justify-between items-center gap-4">
+        <div className="flex justify-between items-center gap-4 ">
           <Filter
             handleFilterChange={handleFilterChange}
             filterArr={[8, 7, 6]}

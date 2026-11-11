@@ -6,10 +6,10 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="p-4 flex justify-between items-center border-b-2 border-gray-600  ">
+    <nav className="p-4 flex justify-between md:items-center border-b-2 border-gray-600  flex-col md:flex-row ">
       <h1 className="text-2xl font-bold text-[#ffe400]">MovieFlix</h1>{" "}
-      <div className="flex justify-between items-center gap-4">
-        <ul className="flex justify-between items-center gap-4 ">
+      <div className="flex justify-between items-center gap-4 py-4 md:py-0">
+        <ul className="flex justify-between md:items-center gap-4 ">
           <li>
             <NavLink
               to="/"
