@@ -2,6 +2,7 @@ import React from "react";
 
 import Navbar from "./components/Navbar/Navbar";
 import AllRouter from "./components/Router/AllRouter";
+import "./index.css";
 
 const App = () => {
   return (
